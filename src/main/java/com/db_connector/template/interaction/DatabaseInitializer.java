@@ -68,7 +68,23 @@ public class DatabaseInitializer {
         }
     }
 
-    public void alterTable(String tableName, String alterType, String[] items){
+    public void alterTable(String tableName, AlterTypes alterType, String[] items){
+        // Create the statement from its parts
+        StringBuilder createString = new StringBuilder();
+        createString.append("alter table ").append(tableName).append(" ");
+
+        // Could range from 
+        createString.append(alterType.toString());
+        
+        for (int i = 0; i < items.length; i++){
+            createString.append(items[i]);
+
+            if (i < items.length - 1){
+                createString.append(" ");
+            }
+        }
+
+        createString.append(";");
 
     }
 
