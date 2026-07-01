@@ -1,3 +1,13 @@
+/**
+ * File: AlterTypes.java
+ * @author: Junshin Purganan
+ * 
+ * Enum representation of the alter statements in order to
+ * allow clearer transfer of meaning for the DDL statement.
+ * Attached is a constructor and toString() method for the
+ * DatabaseInitalizer class to create statement.
+ */
+
 package com.db_connector.template.interaction;
 
 public enum AlterTypes {

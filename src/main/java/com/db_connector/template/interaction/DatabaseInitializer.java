@@ -1,9 +1,23 @@
+/**
+ * 
+ * File: DatabaseInitalizer.java
+ * @author: Junshin Purganan
+ * 
+ * This class is used to intialize the Database, but also
+ * allows for the DDL statements to be procssed to the database.
+ * This includes alter, create, drop, and a generalized statement
+ * executor for the database.
+ */
+
 package com.db_connector.template.interaction;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class DatabaseInitializer {
     DatabaseConnection dbConnection;
 

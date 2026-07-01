@@ -1,3 +1,13 @@
+/**
+ * 
+ * File: DatabaseConnection.java
+ * @author: Junshin Purganan
+ * 
+ * This class is used to connect to the Database, being sent towards
+ * the related intializer and any other necessary classes in order
+ * to alter or transfer data to the database itself.
+ */
+
 package com.db_connector.template.interaction;
 
 import java.io.InputStream;
@@ -6,7 +16,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 import java.io.IOException;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DatabaseConnection {
     private static final Properties properties = new Properties();
 
