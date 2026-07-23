@@ -4,7 +4,7 @@ A full-stack web application designed for browsing movies and media, submitting 
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Frontend:** React, Vite, JavaScript (JSX), CSS
 * **Backend:** Java, Spring Boot (REST API), Spring Data JPA, Maven
